@@ -1,0 +1,14 @@
+CREATE TABLE [dbo].[Order]
+(
+  [Id] INTEGER NOT NULL PRIMARY KEY IDENTITY(1,1),
+  [OrderId] AS 5+Id,
+  [CustomerFirstName] VARCHAR(200) NULL,
+  [CustomerLastName] VARCHAR(200) NULL,
+  [Grade] VARCHAR(200) NULL,
+  [Address1] VARCHAR(200) NULL,
+  [Address2] VARCHAR(200) NULL,
+  [City] VARCHAR(200) NULL,
+  [State] VARCHAR(200) NULL
+)
+
+DROP TABLE [Order];
